@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "isbn",
+    "amazon_url",
+    "author",
+    "language",
+    "pages",
+    "publisher",
+    "title",
+    "year"
+  ],
+  "properties": {
+    "isbn": {
+      "type": "string",
+      "default": "",
+      "title": "The isbn Schema",
+      "examples": ["978-0140449136"]
+    },
+    "amazon_url": {
+      "type": "string",
+      "default": "",
+      "title": "The amazon_url Schema",
+      "examples": ["https://www.amazon.com/dp/0140449132"]
+    },
+    "author": {
+      "type": "string",
+      "default": "",
+      "title": "The author Schema",
+      "examples": ["Homer"]
+    },
+    "language": {
+      "type": "string",
+      "default": "",
+      "title": "The language Schema",
+      "examples": ["English"]
+    },
+    "pages": {
+      "type": "integer",
+      "default": 0,
+      "title": "The pages Schema",
+      "examples": [528]
+    },
+    "publisher": {
+      "type": "string",
+      "default": "",
+      "title": "The publisher Schema",
+      "examples": ["Penguin Classics"]
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "title": "The title Schema",
+      "examples": ["The Odyssey"]
+    },
+    "year": {
+      "type": "integer",
+      "default": 0,
+      "title": "The year Schema",
+      "examples": [1996]
+    }
+  },
+  "examples": [
+    {
+      "isbn": "978-0140449136",
+      "amazon_url": "https://www.amazon.com/dp/0140449132",
+      "author": "Homer",
+      "language": "English",
+      "pages": 528,
+      "publisher": "Penguin Classics",
+      "title": "The Odyssey",
+      "year": 1996
+    }
+  ]
+}
